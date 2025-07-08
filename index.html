@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Village Tour India - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: #111;
+      background-image: url('2-20.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      background: rgba(0, 123, 50, 0.95);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fdd835;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.6)), url('village-bg.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      color: #fdd835;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      max-width: 700px;
+      margin-bottom: 30px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .hero a.button {
+      background: #fdd835;
+      color: #222;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .hero a.button:hover {
+      background: #ffe066;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Village Tour India</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tours.html">Tours</a>
+      <a href="booking.php">Booking</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.php">Register</a>
+      <a href="login.php">Login</a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Explore the Heart of Rural India</h2>
+    <p>Join us for unforgettable village experiences – from folk culture to farming, bamboo crafts to organic food – and connect with the roots of India.</p>
+    <a href="booking.php" class="button">Book a Tour Now</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Village Tour India. All rights reserved.
+  </footer>
+
+</body>
+</html>
